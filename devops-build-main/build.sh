@@ -1,7 +1,11 @@
 #!/bin/bash
 
-echo "Building Docker Image..."
+echo "Building Docker Image"
 
-docker build -t react-devops-app .
+docker build -t devops-build-main_react-app .
 
-echo "Build Completed"
+docker tag devops-build-main_react-app hclkarthi/dev-react:latest
+
+docker push hclkarthi/dev-react:latest
+
+echo "Image pushed successfully"

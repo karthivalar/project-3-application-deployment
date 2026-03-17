@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Stopping old container..."
+echo "Pulling latest image"
 
-docker stop react-container
-docker rm react-container
+docker pull hclkarthi/dev-react:latest
 
-echo "Starting new container..."
+docker stop react-container || true
+docker rm react-container || true
 
-docker run -d -p 80:80 --name react-container react-devops-app
+docker run -d -p 80:80 --name react-container hclkarthi/dev-react:latest
 
-echo "Deployment Completed"
+echo "Deployment completed"
