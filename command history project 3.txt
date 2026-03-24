@@ -1,0 +1,196 @@
+sudo su -root
+    3  sudo -su root
+    4  history 
+ubuntu@ip-172-31-31-100:~$ sudo -su root
+root@ip-172-31-31-100:/home/ubuntu# ls
+project3
+root@ip-172-31-31-100:/home/ubuntu# history 
+    1  ls
+    2  apt-get update
+    3  mkdir project3
+    4  ls
+    5  cd project3/
+    6  ls
+    7  sudo apt update
+    8  sudo apt updated
+    9  sudo apt upgrade
+   10  sudo apt-get install docker.io
+   11  sudo apt-get install docker
+   12  sudo apt-get install git
+   13  sudo apt-get install unzip
+   14  ls
+   15  git init
+   16  ls
+   17  git clone https://github.com/karthivalar/project-3-application-deployment.git
+   18  ls
+   19  cd project-3-application-deployment/
+   20  ls
+   21  unzip devops-build-main.zip 
+   22  ls
+   23  cd devops-build-main
+   24  ls
+   25  cd build/
+   26  ls
+   27  cd ..
+   28  ls
+   29  vi Dockerfile
+   30  vi docker-compose.yml
+   31  docker-compose up -d --build
+   32  apt install docker-compose
+   33  docker-compose up -d --build
+   34  ls
+   35  cat docker-compose.yml 
+   36  vi docker-compose.yml 
+   37  docker-compose down
+   38  docker-compose up -d --build
+   39  docker ps -a
+   40  docker images
+   41  ls
+   42  vi Dockerfile 
+   43  docker-compose up -d --build
+   44  ls
+   45  docker ps
+   46  clear
+   47  vi build.sh
+   48  chmod +x build.sh 
+   49  chmod +x build.sh
+   50  vi deploy.sh
+   51  ls
+   52  vi .gitignore
+   53  vi .dockerignore
+   54  ls
+   55  cat .gitignore 
+   56  cat .dockerignore 
+   57  ls
+   58  cat deploy.sh 
+   59  git checkout -b dev
+   60  ls
+   61  git add .
+   62  git commit -m "initial commit"
+   63  git remote add origin https://github.com/karthivalar/project-3-application-deployment.git
+   64  git push -u origin dev
+   65  dockerhubusername/dev-react
+   66  dockerhubusername/prod-react
+   67  dockerhubhclkarthi/dev-react
+   68  docker login
+   69  docker loing -u hclkarthi
+   70  docker loing -u karthi.rkmathi@gmail.com
+   71  docker login -u hclkarthi
+   72  docker images
+   73  docker ps -a
+   74  docker tag devops-build-main_react-app hclkarthi/dev-react:latest
+   75  docker images
+   76  docker push hclkarthi/dev-react:latest
+   77  ls
+   78  cd home/
+   79  ls
+   80  cd ubuntu/
+   81  ls
+   82  cd project3/
+   83  ls
+   84  cd project-3-application-deployment/
+   85  ls
+   86  cd devops-build-main
+   87  ls
+   88  git checkout -b dev
+   89  git add .
+   90  git commit -m "final devops project"
+   91  git push origin dev
+   92  ls
+   93  git add .
+   94  git commit -m "test pipeline"
+   95  git push origin dev
+   96  docker ps -a
+   97  docker ps
+   98  docker ps -a
+   99  docker stop react-container
+  100  docker ps -a
+  101  docker rm react-container
+  102  docker ps -a
+  103  git add .
+  104  git commit -m "trigger pipeline"
+  105  git push origin dev
+  106  docker ps -a
+  107  echo "test" >> test.txt
+  108  git add .
+  109  git commit -m "trigger pipeline"
+  110  git push origin dev
+  111  docker ps -a
+  112  docker logs react-container
+  113  docker ps -a
+  114  docker stop react-container
+  115  docker rm react-container
+  116  docker ps -a
+  117  git add .
+  118  git commit -m "fix pipeline path"
+  119  git push origin dev
+  120  docker ps -a
+  121  docker run -d -p 9090:9090 prom/prometheus
+  122  docker run -d -p 3000:3000 grafana/grafana
+  123  docker ps -a
+  124  ls
+  125  cd project3/
+  126  ls
+  127  cd project-3-application-deployment/
+  128  ls
+  129  cd devops-build-main
+  130  ls
+  131  vi deploy.sh 
+  132  vi build.sh 
+  133  chmod +x build.sh
+  134  chmod +x deploy.sh 
+  135  docker login -u hclkarthi
+  136  docker ps -a
+  137  docker stop react-container
+  138  docker rm react-container
+  139  docker ps -a
+  140  docker images
+  141  docker run -d -p 80:80 --name react-container hclkarthi/dev-react:latest
+  142  docker ps -a
+  143  docker stop react-container
+  144  docker rm react-container
+  145  docker ps -a
+  146  docker pull hclkarthi/dev-react:latest
+  147  docker login -u hclkarthi
+  148  docker pull hclkarthi/dev-react:latest
+  149  docker images
+  150  docker run -d -p 80:80 --name react-container hclkarthi/dev-react:latest
+  151  docker ps -a
+  152  history 
+  153  ls
+  154  git add build.sh deploy.sh 
+  155  git remote add origin https://github.com/karthivalar/project-3-application-deployment.git
+  156  git push -u origin dev
+  157  sudo apt update
+  158  sudo apt install openjdk-17-jdk -y
+  159  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+  160  sudo sh -c 'echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+  161  sudo apt update
+  162  sudo apt install jenkins -y
+  163  cd /
+  164  ls
+  165  sudo apt update
+  166  sudo apt install openjdk-17-jdk -y
+  167  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+  168  sudo sh -c 'echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+  169  sudo apt update
+  170  sudo apt install jenkins -y
+  171  sudo systemctl start jenkins
+  172  sudo systemctl enable jenkins
+  173  sudo apt update
+  174  sudo apt install fontconfig openjdk-21-jre
+  175  java -version
+  176  sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key
+  177  echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+  178  sudo apt update
+  179  sudo apt install jenkins
+  180  sudo systemctl enable jenkins
+  181  sudo systemctl start jenkins
+  182  sudo systemctl status jenkins
+  183  cat /var/lib/jenkins/secrets/initialAdminPassword
+  184  sudo usermod -aG docker jenkins
+  185  sudo systemctl restart jenkins
+  186  sudo -su root
+  187  ls
+  188  history 
+root@ip-172-31-31-100:/home/ubuntu# 
